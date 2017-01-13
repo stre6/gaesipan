@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<EditText
+    android:layout_width="300dp"
+    android:layout_height="50dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    android:hint="게시물 제목"
+    android:id="@+id/g1"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/g1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:hint="게시물 내용"
+        android:id="@+id/g2"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/g2"
+        android:text="생성"
+        android:id="@+id/b1"
+        android:textAllCaps="false"
+        android:layout_toStartOf="@+id/b2"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:textAllCaps="false"
+        android:layout_alignTop="@+id/b1"
+        android:layout_alignEnd="@+id/g1"
+        android:id="@+id/b2"
+        android:text="취소"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nik"/>
+</RelativeLayout>
